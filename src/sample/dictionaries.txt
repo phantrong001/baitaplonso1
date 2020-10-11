@@ -1,0 +1,31 @@
+30
+time thời gian
+year năm
+people con người
+way con đường
+day ngày
+man đàn ông
+thing sự vật
+woman phụ nữ
+life cuộc sống
+child con cái
+world thế giới
+school trường học
+state trạng thái
+family gia đình
+student học sinh
+group nhóm
+country đất nước
+problem vấn đề
+hand bàn tay
+part bộ phận
+place vị trí
+case trường hợp
+week tuần
+company công ty
+system hệ thống
+program chương trình
+question câu hỏi
+work công việc
+government chính phủ
+number con số

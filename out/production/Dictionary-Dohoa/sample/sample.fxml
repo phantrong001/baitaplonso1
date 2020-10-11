@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<SplitPane dividerPositions="0.2805084745762712" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="833.0" prefWidth="1281.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="831.0" prefWidth="219.0">
+         <children>
+            <Label layoutX="50.0" layoutY="23.0" text="Advanced English Dictionary" textFill="#361010">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="277.0" layoutY="139.0" mnemonicParsing="false" onAction="#Search" prefHeight="65.0" prefWidth="74.0" text="Search" />
+            <TextField fx:id="searchText" layoutX="23.0" layoutY="139.0" prefHeight="65.0" prefWidth="248.0" promptText="Enter Word">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="table2" layoutX="30.0" layoutY="232.0" prefHeight="572.0" prefWidth="301.0">
+              <columns>
+                <TableColumn fx:id="targetColumn2" prefWidth="143.0" text="Target" />
+                <TableColumn fx:id="explainColumn2" prefWidth="157.0" text="Explain" />
+              </columns>
+            </TableView>
+            <Button layoutX="239.0" layoutY="81.0" mnemonicParsing="false" onAction="#hearRead" prefHeight="31.0" prefWidth="110.0" text="Nghe -&gt;" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="963.0" prefWidth="517.0">
+         <children>
+            <Label layoutX="610.0" layoutY="268.0" prefHeight="21.0" prefWidth="74.0" text="Từ vựng" textFill="#281683">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="618.0" layoutY="348.0" prefHeight="21.0" prefWidth="58.0" text="Nghĩa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="targetText" layoutX="687.0" layoutY="266.0" />
+            <TextField fx:id="explainText" layoutX="687.0" layoutY="346.0" />
+            <Button fx:id="Add" layoutX="647.0" layoutY="443.0" mnemonicParsing="false" onAction="#Add" text="Add" />
+            <Button layoutX="781.0" layoutY="443.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+            <TableView fx:id="table" layoutX="59.0" layoutY="259.0" prefHeight="545.0" prefWidth="531.0">
+              <columns>
+                <TableColumn fx:id="targetColumn" prefWidth="272.0" text="Target" />
+                <TableColumn fx:id="explainColumn" prefWidth="258.0" text="Explain" />
+              </columns>
+            </TableView>
+            <Button layoutX="715.0" layoutY="540.0" mnemonicParsing="false" onAction="#Repair" text="Repair" />
+            <TextField fx:id="repairText" layoutX="685.0" layoutY="615.0" />
+            <Label layoutX="627.0" layoutY="571.0" prefHeight="35.0" prefWidth="355.0" text="(Chọn từ cần sửa rồi nhập nghĩa mới)" textAlignment="CENTER" />
+            <Label layoutX="601.0" layoutY="620.0" text="Nghĩa mới" />
+            <HBox fx:id="hBox" layoutX="15.0" layoutY="18.0" prefHeight="224.0" prefWidth="893.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
