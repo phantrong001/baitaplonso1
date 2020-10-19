@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" name="java-google-translate-text-to-speech" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.40-bin" level="project" />
   </component>
 </module>

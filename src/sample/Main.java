@@ -24,31 +24,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            //scene2 nghe
-            Button button3 = new Button("Load: https://translate.google.com/");
-            WebView browser = new WebView();
-            WebEngine webEngine = browser.getEngine();
-            String url = "https://translate.google.com/";
-            webEngine.load(url);
-            VBox root2 = new VBox();
-            root2.getChildren().addAll(button3, browser);
-            Scene scene2 = new Scene(root2);
-            //scene1 them sua xoa
-            Parent root1 = FXMLLoader.load(this.getClass().getResource("sample.fxml"));
-            Scene scene1 = new Scene(root1);
-            //Scene start
-            Label label = new Label("Chọn cậu lệnh bạn muốn thực hiện");
-            Button button1 = new Button("Thêm, Sửa, Xóa, Tìm Kiếm");
-            button1.setOnAction(event -> {
-                primaryStage.setScene(scene1);
-            });
-            Button button2 = new Button("Nghe");
-            button2.setOnAction(event -> {
-                primaryStage.setScene(scene2);
-            });
-            VBox layout1 = new VBox();
-            layout1.getChildren().addAll(label, button1, button2);
-            Scene scene = new Scene(layout1, 300, 200);
+            Parent root = FXMLLoader.load(this.getClass().getResource("sample.fxml"));
+            Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
         }catch (Exception e){
